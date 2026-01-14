@@ -6,13 +6,13 @@ hamBurger.addEventListener("click", function () {
 
 // Dynamic departments
 const departments = [
+  "Admin Department",
   "Business Development Department",
   "Information Technology Department",
   "Internal Audit Department",
   "Corporate & Legal Department",
   "Human Resources Department",
-  "Finance Department",
-  "Admin Department"
+  "Finance Department"
 ];
 
 const departmentsSection = document.getElementById('departments-section');
