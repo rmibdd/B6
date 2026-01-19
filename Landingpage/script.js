@@ -86,8 +86,15 @@ renderDepartments(departments);
 
 // Search functionality
 const searchForm = document.querySelector('form.d-flex');
+const searchButton = document.querySelector('button[type="submit"]');
+
+// Prevent form submission on enter
 searchForm.addEventListener('submit', function(e) {
   e.preventDefault();
+});
+
+// Show similar only upon click search button
+searchButton.addEventListener('click', function(e) {
   const searchInput = document.querySelector('input[type="search"]');
   const query = searchInput.value.trim().toLowerCase();
   const filtered = departments.filter(dept => dept.toLowerCase().includes(query));
@@ -95,5 +102,5 @@ searchForm.addEventListener('submit', function(e) {
 });
 
 function confirmLogout() {
-  window.location.href = '../Homepage/(HOME)Login Page.html';
+  window.location.href = '../index.html';
 }

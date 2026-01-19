@@ -12,3 +12,45 @@ const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
 const SMFiles = "FilesLP.html";
 const SMPolicies = "PoliciesLP.html";
 const SMServices = "ServicesLP.html";
+
+// Search functionality
+const searchForm = document.querySelector('form.d-flex');
+const searchButton = document.querySelector('button[type="submit"]');
+
+// Prevent form submission on enter
+searchForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+});
+
+// Show similar only upon click search button
+searchButton.addEventListener('click', function(e) {
+  const searchInput = document.querySelector('input[type="search"]');
+  const query = searchInput.value.trim().toLowerCase();
+  const containers = document.querySelectorAll('.card, .list-group-item');
+  containers.forEach(container => {
+    const text = container.textContent.toLowerCase();
+    if (query === '' || text.includes(query)) {
+      container.style.display = 'block';
+    } else {
+      container.style.display = 'none';
+    }
+  });
+  // Hide/show headers, paragraphs, and see more buttons based on section visibility
+  const sections = document.querySelectorAll('section.mb-5');
+  sections.forEach(section => {
+    const containersInSection = section.querySelectorAll('.card, .list-group-item');
+    const hasVisible = Array.from(containersInSection).some(cont => cont.style.display === 'block');
+    const h2 = section.querySelector('h2');
+    const p = section.querySelector('p');
+    const seeMoreDiv = section.querySelector('.text-start');
+    if (hasVisible || query === '') {
+      if (h2) h2.style.display = 'block';
+      if (p) p.style.display = 'block';
+      if (seeMoreDiv) seeMoreDiv.style.display = 'block';
+    } else {
+      if (h2) h2.style.display = 'none';
+      if (p) p.style.display = 'none';
+      if (seeMoreDiv) seeMoreDiv.style.display = 'none';
+    }
+  });
+});
