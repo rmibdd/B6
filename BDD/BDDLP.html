@@ -6,7 +6,7 @@
     <title>Business Development Department</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Landingpage/LandingPage.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="page-layout">
@@ -183,6 +183,10 @@
         </nav>
         <h1 class="text-center mb-5"><img src="RMI-BDDLOGO.png" alt="Business Development Department" style="max-width: 45%; height: auto;"></h1>
 
+        <div id="slideshow" class="text-center mb-5">
+            <img id="slide" src="gpt1.png" alt="Slide 1" style="max-width: 20%; height: auto; transition: transform 1s ease-in-out;">
+        </div>
+
         <!-- Accessing Files Section -->
         <section id="accessing-files" class="mb-5">
             <h2>Files</h2>
@@ -289,6 +293,26 @@ achieve the following objectives: </p>
         document.getElementById('wixBooking-link').href = wixBookingUrl;
         document.getElementById('homepagelink').href = Homepage;
         document.getElementById('homepagetext').href = Homepage;
+    </script>
+
+    <script>
+        let images = ['gpt1.png', 'teams3.png', 'fathom2.jpg'];
+        let currentIndex = 0;
+        let slide = document.getElementById('slide');
+
+        function changeImage() {
+            slide.style.transform = 'translateX(-100%)';
+            setTimeout(() => {
+                slide.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    slide.src = images[currentIndex];
+                    slide.style.transform = 'translateX(0)';
+                }, 50);
+            }, 1000);
+        }
+
+        setInterval(changeImage, 3000);
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
