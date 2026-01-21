@@ -176,71 +176,85 @@
         </aside>
         <div class="main-content-area">
             <div class="container mt-5">
-        <nav class="top-navigation navbar-expand px-4 py-3">
-            <form action="#" class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </nav>
+            <nav class="top-navigation navbar-expand px-4 py-3">
+                <form action="#" class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </nav>
+            </div>
         <h1 class="text-center mb-5"><img src="RMI-BDDLOGO.png" alt="Business Development Department" style="max-width: 45%; height: auto;">
         </h1>
 
         <div class="Carousel">
             <div class="group">
-                <a class="card" href="https://chatgpt.com/" target="_blank">
+                <a class="card" id="chatgpt-link1">
                     <img src="gpt1.png" alt="ChatGPT">
                 </a>
-                <a class="card" href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=13db5a00094269a13f7f4ff30827687d" target="_blank">
+                <a class="card" id="teams-link1">
                     <img src="teams3.png" alt="Microsoft Teams">
                 </a>
-                <a class="card" href="https://fathom.video/users/sign_in" target="_blank">
+                <a class="card" id="fathom-link1">
                     <img src="fathom2.jpg" alt="Fathom">
                 
                 </a>
             </div>
             <div class="group">
-                <a class="card" href="https://chatgpt.com/" target="_blank">
+                <a class="card" id="chatgpt-link2">
                     <img src="gpt1.png" alt="ChatGPT">
                 </a>
-                <a class="card" href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=13db5a00094269a13f7f4ff30827687d" target="_blank">
+                <a class="card" id="teams-link2">
                     <img src="teams3.png" alt="Microsoft Teams">
                 </a>
-                <a class="card" href="https://fathom.video/users/sign_in" target="_blank">
+                <a class="card" id="fathom-link2">
                     <img src="fathom2.jpg" alt="Fathom">
-                
-                </a>
-            </div>
-            <div class="group">
-                <a class="card" href="https://chatgpt.com/" target="_blank">
-                    <img src="gpt1.png" alt="ChatGPT">
-                </a>
-                <a class="card" href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=13db5a00094269a13f7f4ff30827687d" target="_blank">
-                    <img src="teams3.png" alt="Microsoft Teams">
-                </a>
-                <a class="card" href="https://fathom.video/users/sign_in" target="_blank">
-                    <img src="fathom2.jpg" alt="Fathom">
-                
                 </a>
             </div>
             
         </div>
+        
 
         <!-- Accessing Files Section -->
         <section id="accessing-files" class="mb-5">
             <h2>Files</h2>
             <p>Here you can access various files related to the Business Development Department.</p>
             <div class="row">
-                <div class="col-md-4">
+               <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">SharePoint</h5>
-                            <p class="card-text">Access shared documents and files on SharePoint.</p>
-                            <a id="sharepoint-link" href="#" class="btn btn-primary">View SharePoint</a>
+                            <h5 class="card-title">Logos</h5>
+                            <p class="card-text">Access Rayomar Group Logos</p>
+                            <a id="sharepoint-logos" href="#" class="btn btn-primary">View Logos</a>
                         </div>
+                    
                     </div>
+                </div>
+                 <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Templates</h5>
+                        <p class="card-text">Access Template</p>
+                        <a id="sharepoint-templates" href="#" class="btn btn-primary">View Templates</a>
+                    </div>
+                    
                 </div>
                 
             </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tools & Resources</h5>
+                        <p class="card-text">Access documents and files related to manual and Guidelines of tools and resources.</p>
+                        <a id="sharepoint-tools" href="#" class="btn btn-primary">View Tools & Resources</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            </div>
+           
+                
+        
             <div class="text-start mt-3">
                 <a id="filesLP-link" href="#" class="btn btn-primary">See More</a>
             </div>
@@ -321,7 +335,9 @@ achieve the following objectives: </p>
     <script>
         
         document.getElementById('filesLP-link').href = SMFiles;
-        document.getElementById('sharepoint-link').href = SPfile;
+        document.getElementById('sharepoint-logos').href = logosfile;
+        document.getElementById('sharepoint-templates').href = templatefile;
+        document.getElementById('sharepoint-tools').href = SPfile;
         document.getElementById('lightning-guidelines').href = Policy1;
         document.getElementById('steering-guidelines').href = Policy2;
         document.getElementById('management-excellence-guidelines').href = Policy3;
@@ -331,7 +347,7 @@ achieve the following objectives: </p>
         document.getElementById('wixBooking-link').href = wixBookingUrl;
         document.getElementById('homepagelink').href = Homepage;
         document.getElementById('homepagetext').href = Homepage;
-    </script>
+        </script>
 
     
 
