@@ -6,7 +6,8 @@
     <title>Business Development Department</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Landingpage/LandingPage.css">
+    <link rel="stylesheet" href="BDDLP.css">
 </head>
 <body>
     <div class="page-layout">
@@ -49,7 +50,7 @@
                                     <a href="../Admin/AdminServicesLP.html" class="sidebar-nav-link">Services</a>
                                 </li>
                             </ul>
-                        </li>
+                </li>
 
                         <li class="sidebar-nav-item">
                             <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
@@ -181,10 +182,47 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </nav>
-        <h1 class="text-center mb-5"><img src="RMI-BDDLOGO.png" alt="Business Development Department" style="max-width: 45%; height: auto;"></h1>
+        <h1 class="text-center mb-5"><img src="RMI-BDDLOGO.png" alt="Business Development Department" style="max-width: 45%; height: auto;">
+        </h1>
 
-        <div id="slideshow" class="text-center mb-5">
-            <img id="slide" src="gpt1.png" alt="Slide 1" style="max-width: 20%; height: auto; transition: transform 1s ease-in-out;">
+        <div class="Carousel">
+            <div class="group">
+                <a class="card" href="https://chatgpt.com/" target="_blank">
+                    <img src="gpt1.png" alt="ChatGPT">
+                </a>
+                <a class="card" href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=13db5a00094269a13f7f4ff30827687d" target="_blank">
+                    <img src="teams3.png" alt="Microsoft Teams">
+                </a>
+                <a class="card" href="https://fathom.video/users/sign_in" target="_blank">
+                    <img src="fathom2.jpg" alt="Fathom">
+                
+                </a>
+            </div>
+            <div class="group">
+                <a class="card" href="https://chatgpt.com/" target="_blank">
+                    <img src="gpt1.png" alt="ChatGPT">
+                </a>
+                <a class="card" href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=13db5a00094269a13f7f4ff30827687d" target="_blank">
+                    <img src="teams3.png" alt="Microsoft Teams">
+                </a>
+                <a class="card" href="https://fathom.video/users/sign_in" target="_blank">
+                    <img src="fathom2.jpg" alt="Fathom">
+                
+                </a>
+            </div>
+            <div class="group">
+                <a class="card" href="https://chatgpt.com/" target="_blank">
+                    <img src="gpt1.png" alt="ChatGPT">
+                </a>
+                <a class="card" href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=13db5a00094269a13f7f4ff30827687d" target="_blank">
+                    <img src="teams3.png" alt="Microsoft Teams">
+                </a>
+                <a class="card" href="https://fathom.video/users/sign_in" target="_blank">
+                    <img src="fathom2.jpg" alt="Fathom">
+                
+                </a>
+            </div>
+            
         </div>
 
         <!-- Accessing Files Section -->
@@ -295,29 +333,20 @@ achieve the following objectives: </p>
         document.getElementById('homepagetext').href = Homepage;
     </script>
 
+    
+
     <script>
-        let images = ['gpt1.png', 'teams3.png', 'fathom2.jpg'];
-        let currentIndex = 0;
-        let slide = document.getElementById('slide');
-
-        function changeImage() {
-            slide.style.transform = 'translateX(-100%)';
-            setTimeout(() => {
-                slide.style.transform = 'translateX(100%)';
-                setTimeout(() => {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    slide.src = images[currentIndex];
-                    slide.style.transform = 'translateX(0)';
-                }, 50);
-            }, 1000);
+        // Sidebar toggle
+        const hamBurger = document.querySelector(".sidebar-toggle-btn");
+        if (hamBurger) {
+            hamBurger.addEventListener("click", function () {
+                document.querySelector("#sidebar-container").classList.toggle("expand");
+            });
         }
-
-        setInterval(changeImage, 3000);
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="../Landingpage/script.js"></script>
 </body>
 </html>
