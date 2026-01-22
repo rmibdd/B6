@@ -1,9 +1,8 @@
-
+/***** BDDLP *****/
 .Carousel{
-    margin: 100px auto;
+    margin: 10px auto;
     width: 100%;
     box-sizing: border-box;
-    
     overflow-x: auto;
      display: flex;
     
@@ -11,7 +10,7 @@
 .group {
     display: flex;
     flex: content;
-    margin: 100px auto;
+    margin: 10px auto;
     gap: 20px;
     animation: spin 10s linear infinite;
     padding-right: 2em;
@@ -43,3 +42,47 @@
     from {translate: 0 0;}
     to {translate: -100% 0;}
  }
+/***** End Section *****/
+h3 {
+    font-size: 1.25rem;
+}
+/***** MS TEAMS*****/  
+
+.teams-logo {
+    max-width: 100%;
+    height: auto;
+    padding-left: 20%;
+}
+
+.access-header {
+    color: #007bff;
+    font-weight: bold;
+    
+}
+
+.manual-header {
+    
+    font-weight: bold;
+    border-left: 5px solid #28a745;
+    padding-left: 10px;
+}
+
+.manual-content {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.updates-header {
+    
+    font-weight: bold;
+    border-bottom: 2px solid #dc3545;
+    padding-bottom: 5px;
+}
+
+.updates-content {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: square;
+}

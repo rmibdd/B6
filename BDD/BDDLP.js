@@ -3,11 +3,28 @@ const projectRequestUrl = "https://forms.office.com/r/AHPQAeL3Nj";
 const Policy1 = "https://rayomarmgt.sharepoint.com/:b:/s/WebsiteMaterials/IQD-8o-HExW-RY_LseAOO3U1AdlDaQmQq5k6rnME11n1Ggs?e=MtkstO";
 const Policy2 = "https://rayomarmgt.sharepoint.com/:b:/s/WebsiteMaterials/IQBf0abBP0QcS57GPAac86MLAR7dNGm0pXdnenzK2fyc3FQ?e=vcJdoJ";
 const Policy3 = "#"; // Placeholder link for Management Excellence Award
-const SPfile = "https://rayomarmgt-my.sharepoint.com/:f:/g/personal/charles_ramos_rayomar_com_ph/IgAmsMoc2fdkQrBIdVaa7MosAW3Ib6JrRwgP93-8BoTPzXU?e=JsNvlw"
-const logosfile ="#"
-const templatefile ="#"
+
+
 //HREF navigation within the website
 const Homepage = "../Landingpage/LandingPage.html";
+const SPfile = "https://rayomarmgt-my.sharepoint.com/:f:/g/personal/charles_ramos_rayomar_com_ph/IgAmsMoc2fdkQrBIdVaa7MosAQY3GwxAOqqEBE-6ZGwTW9Q?e=sEUkoU"
+const logosfile ="https://rayomarmgt-my.sharepoint.com/:f:/g/personal/charles_ramos_rayomar_com_ph/IgBonfPH8yR7RbFOnc-yFoVaASiqUzRn1mNpz19zBceTY28?e=fuWKoB"
+const templatefile ="#"
+const teamsfile ="MS Teams.html"
+const chatgptfile ="ChatGPT.html"
+const fathomfile ="Fathom.html"
+//HREF navigation within MSTeams.html
+const teamsSignIn = "https://teams.microsoft.com";
+const teamsManual = "https://rayomarmgt-my.sharepoint.com/:b:/g/personal/charles_ramos_rayomar_com_ph/IQDaeTaMrGcmRZ3NwNB4ppZgAfe9Ph_WOcnmNhekcz7EQMQ?e=pjpyCP"
+
+// HREF navigation within Fathom.html
+const fathomSignIn = "https://fathom.com"; // placeholder
+const fathomManual = "#"; // placeholder
+
+// HREF navigation within ChatGPT.html
+const chatgptSignIn = "https://chat.openai.com";
+const chatgptManual = "#"; // placeholder
+
 // HREF navigation within the BDD section
 const backToBDDMain = "BDDLP.html";
 const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
