@@ -56,3 +56,7 @@ searchButton.addEventListener('click', function(e) {
     }
   });
 });
+
+function confirmLogout() {
+  window.location.href = '../login.html';
+}

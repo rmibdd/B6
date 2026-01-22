@@ -102,5 +102,5 @@ searchButton.addEventListener('click', function(e) {
 });
 
 function confirmLogout() {
-  window.location.href = '../index.html';
+  window.location.href = '../login.html';
 }
