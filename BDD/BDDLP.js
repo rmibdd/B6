@@ -27,7 +27,7 @@ const chatgptManual = "https://gofile.me/70I49/Mb5gaGMBg";
 const Homepage = "../Landingpage/LandingPage.html";
 const SPfile = "https://gofile.me/70I49/fjG0pC7ur";
 const logosfile = "https://gofile.me/70I49/x5WEWfOG2";
-const templatefile ="#"
+const templatefile ="https://gofile.me/70I49/a0PjjQTaZ"
 
 //Variable names for HREFs in PoliciesLP.html
 const PolicyLAD = "https://gofile.me/70I49/cljvKWYSl";

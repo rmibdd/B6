@@ -1,0 +1,112 @@
+/* CLD - Corporate & Legal Department Styles */
+
+:root {
+  --cld-accent: #6f42c1; /* purple accent */
+  --cld-muted: #f6eefc;
+  --cld-text: #263238;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 1100px;
+}
+
+/* Headings */
+h1.text-center {
+  color: var(--cld-accent);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  color: var(--cld-accent);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  color: #616161;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 0.65rem;
+  border: 1px solid #e9e6f6;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  overflow: hidden;
+}
+
+.card .card-body h5.card-title {
+  color: var(--cld-text);
+  font-weight: 600;
+}
+
+.card .card-text {
+  color: #495057;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(111, 66, 193, 0.08);
+}
+
+/* Accent for primary actions in CLD */
+.btn-success {
+  background-color: var(--cld-accent) !important;
+  border-color: var(--cld-accent) !important;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: #59319a !important;
+  border-color: #59319a !important;
+}
+
+/* List group items (policies) */
+.list-group-item h5 {
+  font-weight: 600;
+}
+
+.list-group-item {
+  border-left: 4px solid transparent;
+}
+
+.list-group-item:hover {
+  background-color: var(--cld-muted);
+  border-left-color: var(--cld-accent);
+}
+
+/* Accordion styling */
+.accordion-button {
+  background-color: #faf7fe;
+  color: var(--cld-text);
+  border: 1px solid #efe9fb;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(111,66,193,0.06);
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #fff;
+}
+
+/* Search form */
+form.d-flex .form-control {
+  border-radius: 50px;
+}
+
+form.d-flex .btn {
+  border-radius: 50px;
+}
+
+/* Utility */
+.text-start .btn {
+  min-width: 120px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card { margin-bottom: 1rem; }
+}
