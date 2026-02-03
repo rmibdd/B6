@@ -1,0 +1,35 @@
+/* IA - Internal Audit Department Styles */
+
+:root {
+  --ia-accent: #6f42c1; /* purple */
+  --ia-muted: #f6f1fb;
+  --ia-text: #1f2430;
+}
+
+.container { max-width: 1100px; }
+
+h1.text-center { color: var(--ia-accent); font-weight: 700; margin-bottom: 1.5rem; }
+
+section h2 { color: var(--ia-accent); margin-top: 0; margin-bottom: 0.5rem; }
+section p { color: #5f6b73; margin-bottom: 1rem; }
+
+.card { border-radius: 0.65rem; border: 1px solid #f0e7ff; transition: transform 0.18s ease, box-shadow 0.18s ease; overflow: hidden; }
+.card .card-body h5.card-title { color: var(--ia-text); font-weight: 600; }
+.card .card-text { color: #495057; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 8px 24px rgba(111,66,193,0.08); }
+
+.btn-success { background-color: var(--ia-accent) !important; border-color: var(--ia-accent) !important; }
+.btn-success:hover, .btn-success:focus { background-color: #5931a8 !important; border-color: #5931a8 !important; }
+
+.list-group-item h5 { font-weight: 600; }
+.list-group-item:hover { background-color: var(--ia-muted); border-left-color: var(--ia-accent); }
+
+.accordion-button { background-color: #fbf7ff; color: var(--ia-text); border: 1px solid #f0e7ff; }
+.accordion-button:not(.collapsed) { background-color: rgba(111,66,193,0.06); box-shadow: none; }
+
+form.d-flex .form-control { border-radius: 50px; }
+form.d-flex .btn { border-radius: 50px; }
+
+.text-start .btn { min-width: 120px; }
+
+@media (max-width:768px) { .card { margin-bottom: 1rem; } }
