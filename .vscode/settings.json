@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "**/*": false,
+    "**/login.html": false
+  }
+}

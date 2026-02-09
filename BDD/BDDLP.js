@@ -6,6 +6,15 @@ const SMServices = "ServicesLP.html";
 const teamsfile ="MS Teams.html"
 const chatgptfile ="ChatGPT.html"
 const fathomfile ="Fathom.html"
+//About Us Section
+const aboutUsFile = "BDDAboutUs.html";
+const Member1 = "../BDD/#"; // Placeholder link for Member 1
+const Member2 = "../BDD/#"; // Placeholder link for Member 2
+const Member3 = "../BDD/#"; // Placeholder link for Member 3
+const Member4 = "../BDD/#"; // Placeholder link for Member 4
+const Member5 = "../BDD/#"; // Placeholder link for Member 5
+const Member6 = "../BDD/#"; // Placeholder link for Member 6
+const OrgChartFile = "../BDD/Org_chart.png";
 
 // HREF navigation within WixBooking.html
 const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";

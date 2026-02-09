@@ -7,8 +7,8 @@ const IAServicesLP = "IAServicesLP.html";
 const IALP = "IALP.html";
 
 // Resource placeholders (replace with real URLs if needed)
-const knowledgeBase = "#";
-const ticketSystem = "#";
+const DocTmp_Policy = "https://gofile.me/70I49/OlZkJo2k0";
+const DocTmp_Procedure = "https://gofile.me/70I49/UBzXTV93D";
 
 // Search functionality
 (function() {

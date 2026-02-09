@@ -1,4 +1,12 @@
 /***** BDDLP *****/
+/* Center the department navigation navbar */
+
+.nav-item{
+    align-items: center;
+    gap: 2rem;
+    font-size: larger;
+}
+
 .Carousel{
     margin: 10px auto;
     width: 100%;
@@ -86,3 +94,91 @@ h3 {
     border-radius: 5px;
     list-style-type: square;
 }
+
+/***** About US *****/
+.team-member-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .team-member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .member-photo {
+            width: 100%;
+            height: 250px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        
+        .member-info {
+            padding: 20px;
+        }
+        
+        .member-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .member-detail {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #555;
+        }
+        
+        .member-email {
+            font-size: 12px;
+            color: #007bff;
+            word-break: break-all;
+        }
+        
+        .section-header {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .section-header h3 {
+            color: #333;
+            font-weight: bold;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .org-chart-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .org-chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .group-photo-container {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        .group-photo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
