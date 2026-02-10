@@ -10,6 +10,10 @@ const IALP = "IALP.html";
 const DocTmp_Policy = "https://gofile.me/70I49/OlZkJo2k0";
 const DocTmp_Procedure = "https://gofile.me/70I49/UBzXTV93D";
 
+// Service Placeholders (replace with real URLs if needed)
+const OEService = "https://forms.gle/Z4ha5AQ9kgkBz3G66";
+const DRService = "https://forms.gle/cJLKJATHRfAZRb5L7";
+
 // Search functionality
 (function() {
   const searchForm = document.querySelector('form.d-flex');

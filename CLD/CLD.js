@@ -4,7 +4,7 @@
 const CLDFilesLP = "CLDFiles.html";
 const CLDPoliciesLP = "CLDPolicies.html";
 const CLDServicesLP = "CLDServices.html";
-
+const CLDHomepage = "CLDLP.html";
 // HREF navigation to within the CLDServices.html
 const corporateServices = "https://forms.office.com/r/2k2N0YMcvj";
 const legalServices = "https://forms.office.com/r/73Gpg6P760";
