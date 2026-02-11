@@ -1,8 +1,8 @@
-// HREF navigation within the BDD section
-const backToBDDMain = "BDDLP.html";
-const SMFiles = "FilesLP.html";
-const SMPolicies = "PoliciesLP.html";
-const SMServices = "ServicesLP.html";
+// HREF navigation within the HR section
+const backToHRMain = "HRDLP.html";
+const SMFiles = "HRFilesLP.html";
+const SMPolicies = "HRPoliciesLP.html";
+const SMServices = "HRServicesLP.html";
 const teamsfile ="MS Teams.html"
 const chatgptfile ="ChatGPT.html"
 const fathomfile ="Fathom.html"
@@ -10,14 +10,14 @@ const fathomfile ="Fathom.html"
 //News Section
 
 //About Us Section
-const aboutUsFile = "BDDAboutUs.html";
+const aboutUsFile = "HRAboutUs.html";
 const Member1 = "#"; // Placeholder link for Member 1
 const Member2 = "#"; // Placeholder link for Member 2
 const Member3 = "#"; // Placeholder link for Member 3
 const Member4 = "#"; // Placeholder link for Member 4
 const Member5 = "#"; // Placeholder link for Member 5
 const Member6 = "#"; // Placeholder link for Member 6
-const OrgChartFile = "../BDD/Org_chart.png";
+const OrgChartFile = "../HR/Org_chart.png";
 
 // HREF navigation within WixBooking.html
 const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
@@ -35,21 +35,21 @@ const chatgptSignIn = "https://chat.openai.com";
 const chatgptManual = "https://gofile.me/70I49/Mb5gaGMBg";
 
 
-//HREF navigation within the FilesLP.html
+//HREF navigation within the HRFilesLP.html
 const Homepage = "../Landingpage/LandingPage.html";
 const SPfile = "https://gofile.me/70I49/fjG0pC7ur";
-const logosfile = "https://gofile.me/70I49/x5WEWfOG2";
+const handbookfile = "https://gofile.me/70I49/x5WEWfOG2";
 const templatefile ="https://gofile.me/70I49/a0PjjQTaZ"
 
-//Variable names for HREFs in PoliciesLP.html
-const PolicyLAD = "https://gofile.me/70I49/cljvKWYSl";
-const PolicySC = "https://gofile.me/70I49/64U1jyFlA";
-const PolicyMEA = "#"; // Placeholder link for Management Excellence Award
-const PolicyPRF = "https://gofile.me/70I49/tZrINxMQb";
-const PolicyPTL = "https://gofile.me/70I49/7pHEHiw6H"; 
+//Variable names for HREFs in HRPoliciesLP.html
+const PolicyCodeOfConduct = "https://gofile.me/70I49/cljvKWYSl";
+const PolicyLeave = "https://gofile.me/70I49/64U1jyFlA";
+const PolicyPerformance = "#"; // Placeholder link for Performance Management Policy
+const PolicyCompliance = "https://gofile.me/70I49/tZrINxMQb";
+const PolicyWellness = "https://gofile.me/70I49/7pHEHiw6H"; 
 
-// Variable names for HREFs in ServicesLP.html
-const projectRequestUrl = "https://forms.office.com/r/AHPQAeL3Nj";
+// Variable names for HREFs in HRServicesLP.html
+const employeeSupportUrl = "https://forms.office.com/r/AHPQAeL3Nj";
 
 
 

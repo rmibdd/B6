@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,10 @@
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Landingpage/LandingPage.css">
+    <link rel="stylesheet" href="HRDLP.css">
+
+</head>
+
 <body>
     <div class="page-layout">
         <aside id="sidebar-container">
@@ -15,156 +20,167 @@
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-brand">
-                    <a href="../Landingpage/LandingPage.html">Rayomarhub</a>
+                    <a id="homepagelink" href="#">Rayomarhub</a>
                 </div>
             </div>
             <ul class="sidebar-navigation">
                 <li class="sidebar-nav-item">
-                    <a href="../Landingpage/LandingPage.html" class="sidebar-nav-link">
+                    <a id="homepagetext" href="#" class="sidebar-nav-link">
                         <i class="lni lni-user"></i>
                         <span>Home</span>
                     </a>
                 </li>
                 <li class="sidebar-nav-item">
-                    <a href="https://rmi-bdd.wixsite.com/rayomargroup-booking" class="sidebar-nav-link">
+                    <a id="wixBooking-link" href="https://rmi-bdd.wixsite.com/rayomargroup-booking"
+                        class="sidebar-nav-link">
                         <i class="lni lni-agenda"></i>
                         <span>Book Conference Room</span>
                     </a>
                 </li>
                 <li class="sidebar-nav-item">
-                            <a href="../Admin/AdminDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-admin-dropdown" aria-expanded="false" aria-controls="sidebar-admin-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Admin Department</span>
-                            </a>
-                            <ul id="sidebar-admin-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../Admin/AdminFilesLP.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../Admin/AdminPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../Admin/AdminServicesLP.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
-                        </li>
-
+                    <a href="../Admin/AdminDLP.html" class="sidebar-nav-link collapsed has-dropdown"
+                        data-bs-toggle="collapse" data-bs-target="#sidebar-admin-dropdown" aria-expanded="false"
+                        aria-controls="sidebar-admin-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Admin Department</span>
+                    </a>
+                    <ul id="sidebar-admin-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
                         <li class="sidebar-nav-item">
-                            <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-bd-dropdown" aria-expanded="false" aria-controls="sidebar-bd-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Business Development Department</span>
-                            </a>
-                            <ul id="sidebar-bd-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../BDD/FilesLP.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../BDD/PoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../BDD/ServicesLP.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
+                            <a href="../Admin/AdminFilesLP.html" class="sidebar-nav-link">Files</a>
                         </li>
                         <li class="sidebar-nav-item">
-                            <a href="../CLD/CLDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-legal-dropdown" aria-expanded="false" aria-controls="sidebar-legal-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Corporate & Legal Department</span>
-                            </a>
-                            <ul id="sidebar-legal-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../CLD/CLDFiles.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../CLD/CLDPolicies.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../CLD/CLDServices.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
+                            <a href="../Admin/AdminPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
                         </li>
-                        
                         <li class="sidebar-nav-item">
-                            <a href="../FD/FDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-finance-dropdown" aria-expanded="false" aria-controls="sidebar-finance-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Finance Department</span>
-                            </a>
-                            <ul id="sidebar-finance-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../FD/FDFilesLP.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../FD/FDPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../FD/FDServicesLP.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
+                            <a href="../Admin/AdminServicesLP.html" class="sidebar-nav-link">Services</a>
                         </li>
-
-                        <li class="sidebar-nav-item">
-                            <a href="../HR/HRDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-hr-dropdown" aria-expanded="false" aria-controls="sidebar-hr-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Human Resources Department</span>
-                            </a>
-                            <ul id="sidebar-hr-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../HR/HRFilesLP.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../HR/HRPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../HR/HRServicesLP.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="sidebar-nav-item">
-                            <a href="../IA/IALP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-audit-dropdown" aria-expanded="false" aria-controls="sidebar-audit-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Internal Audit Department</span>
-                            </a>
-                            <ul id="sidebar-audit-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../IA/IAFilesLP.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../IA/IAPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../IA/IAServicesLP.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="sidebar-nav-item">
-                            <a href="../IT/ITDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
-                                data-bs-target="#sidebar-it-dropdown" aria-expanded="false" aria-controls="sidebar-it-dropdown">
-                                <i class="lni lni-protection"></i>
-                                <span>Information Technology Department</span>
-                            </a>
-                            <ul id="sidebar-it-dropdown" class="sidebar-dropdown-menu list-unstyled collapse" data-bs-parent="#sidebar-container">
-                                <li class="sidebar-nav-item">
-                                    <a href="../IT/ITFilesLP.html" class="sidebar-nav-link">Files</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../IT/ITPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
-                                </li>
-                                <li class="sidebar-nav-item">
-                                    <a href="../IT/ITServicesLP.html" class="sidebar-nav-link">Services</a>
-                                </li>
-                            </ul>
-                        </li>  
                     </ul>
-                
+                </li>
+
+                <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar-bd-dropdown" aria-expanded="false" aria-controls="sidebar-bd-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Business Development Department</span>
+                    </a>
+                    <ul id="sidebar-bd-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
+                        <li class="sidebar-nav-item">
+                            <a href="../BDD/FilesLP.html" class="sidebar-nav-link">Files</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../BDD/PoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../BDD/ServicesLP.html" class="sidebar-nav-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="../CLD/CLDLP.html" class="sidebar-nav-link collapsed has-dropdown"
+                        data-bs-toggle="collapse" data-bs-target="#sidebar-legal-dropdown" aria-expanded="false"
+                        aria-controls="sidebar-legal-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Corporate & Legal Department</span>
+                    </a>
+                    <ul id="sidebar-legal-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
+                        <li class="sidebar-nav-item">
+                            <a href="../CLD/CLDFiles.html" class="sidebar-nav-link">Files</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../CLD/CLDPolicies.html" class="sidebar-nav-link">Policies & Guidelines</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../CLD/CLDServices.html" class="sidebar-nav-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-nav-item">
+                    <a href="../FD/FDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar-finance-dropdown" aria-expanded="false"
+                        aria-controls="sidebar-finance-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Finance Department</span>
+                    </a>
+                    <ul id="sidebar-finance-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
+                        <li class="sidebar-nav-item">
+                            <a href="../FD/FDFilesLP.html" class="sidebar-nav-link">Files</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../FD/FDPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../FD/FDServicesLP.html" class="sidebar-nav-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-nav-item">
+                    <a href="../HR/HRDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar-hr-dropdown" aria-expanded="false" aria-controls="sidebar-hr-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Human Resources Department</span>
+                    </a>
+                    <ul id="sidebar-hr-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
+                        <li class="sidebar-nav-item">
+                            <a href="../HR/HRFilesLP.html" class="sidebar-nav-link">Files</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../HR/HRPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../HR/HRServicesLP.html" class="sidebar-nav-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-nav-item">
+                    <a href="../IA/IALP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar-audit-dropdown" aria-expanded="false"
+                        aria-controls="sidebar-audit-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Internal Audit Department</span>
+                    </a>
+                    <ul id="sidebar-audit-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
+                        <li class="sidebar-nav-item">
+                            <a href="../IA/IAFilesLP.html" class="sidebar-nav-link">Files</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../IA/IAPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../IA/IAServicesLP.html" class="sidebar-nav-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-nav-item">
+                    <a href="../IT/ITDLP.html" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar-it-dropdown" aria-expanded="false" aria-controls="sidebar-it-dropdown">
+                        <i class="lni lni-protection"></i>
+                        <span>Information Technology Department</span>
+                    </a>
+                    <ul id="sidebar-it-dropdown" class="sidebar-dropdown-menu list-unstyled collapse"
+                        data-bs-parent="#sidebar-container">
+                        <li class="sidebar-nav-item">
+                            <a href="../IT/ITFilesLP.html" class="sidebar-nav-link">Files</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../IT/ITPoliciesLP.html" class="sidebar-nav-link">Policies & Guidelines</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="../IT/ITServicesLP.html" class="sidebar-nav-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
+
             <div class="sidebar-footer">
                 <a href="#" class="sidebar-nav-link" data-bs-toggle="modal" data-bs-target="#logoutModal">
                     <i class="lni lni-exit"></i>
@@ -174,131 +190,425 @@
         </aside>
         <div class="main-content-area">
             <div class="container mt-5">
-        <nav class="top-navigation navbar-expand px-4 py-3">
-            <form action="#" class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </nav>
-        <h1 class="text-center mb-5">Human Resources Department</h1>
+                <nav class="top-navigation navbar-expand px-4 py-3">
+                    <form action="#" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
 
-        <!-- Accessing Files Section -->
-        <section id="accessing-files" class="mb-5">
-            <h2>Files</h2>
-            <p>Here you can access various files related to the Human Resources Department.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">File 1</h5>
-                            <p class="card-text">Description of File 1.</p>
-                            <a href="#" class="btn btn-primary">Download</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">File 2</h5>
-                            <p class="card-text">Description of File 2.</p>
-                            <a href="#" class="btn btn-primary">Download</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">File 3</h5>
-                            <p class="card-text">Description of File 3.</p>
-                            <a href="#" class="btn btn-primary">Download</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-start mt-3">
-                <a href="HRFilesLP.html" class="btn btn-primary">See More</a>
-            </div>
-        </section>
+            <!-- Department Navigation Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+                <div class="container-fluid">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a id="navbar-home-link" class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navbar-aboutus-link" class="nav-link" href="">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navbar-services-link" class="nav-link" href="">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navbar-files-link" class="nav-link" href="">Files</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navbar-policies-link" class="nav-link" href="">Policies and Guidelines</a>
+                        </li>
 
-        <!-- Policies and Guidelines Section -->
-        <section id="policies-guidelines" class="mb-5">
-            <h2>Policies and Guidelines</h2>
-            <p>Review the policies and guidelines for the Human Resources Department.</p>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h5>Policy 1</h5>
-                    <p>Description of Policy 1.</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </li>
-                <li class="list-group-item">
-                    <h5>Guideline 1</h5>
-                    <p>Description of Guideline 1.</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </li>
-                <li class="list-group-item">
-                    <h5>Policy 2</h5>
-                    <p>Description of Policy 2.</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </li>
-            </ul>
-            <div class="text-start mt-3">
-                <a href="HRPoliciesLP.html" class="btn btn-secondary">See More</a>
-            </div>
-        </section>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- Services Section -->
-        <section id="services" class="mb-5">
-            <h2>Services</h2>
-            <p>Explore the services offered by the Human Resources Department.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Service 1</h5>
-                            <p class="card-text">Description of Service 1.</p>
-                            <a href="#" class="btn btn-success">Learn More</a>
-                        </div>
-                    </div>
+            <!-- News & Events Carousel Section -->
+            <h2 class="text-center mb-5">Latest News & Events</h2>
+            <h3 class="text-center mb-5">"Stay informed with our latest HR updates and announcements"</h3>
+
+            <div class="Carousel">
+                <div class="group">
+                    <a class="card" id="news-link1">
+                        <img src="news1.png" alt="News Event 1">
+                    </a>
+                    <a class="card" id="news-link2">
+                        <img src="news2.png" alt="News Event 2">
+                    </a>
+                    <a class="card" id="news-link3">
+                        <img src="news3.png" alt="News Event 3">
+                    </a>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Service 2</h5>
-                            <p class="card-text">Description of Service 2.</p>
-                            <a href="#" class="btn btn-success">Learn More</a>
-                        </div>
-                    </div>
+                <div class="group">
+                    <a class="card" id="news-link4">
+                        <img src="news1.png" alt="News Event 1">
+                    </a>
+                    <a class="card" id="news-link5">
+                        <img src="news2.png" alt="News Event 2">
+                    </a>
+                    <a class="card" id="news-link6">
+                        <img src="news3.png" alt="News Event 3">
+                    </a>
                 </div>
             </div>
+
+            <h1 class="text-center mb-5"><img src="RMI-HRLOGO.png" alt="Human Resources Department"
+                    style="max-width: 45%; height: auto;">
+            </h1>
+            <!-- Mission and Vision Section -->
+            <section id="mission-vision" class="mb-5">
+                <h2 class="text-center mb-5">Our Mission & Vision</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-3">Our Mission</h5>
+                                <p class="card-text">The Human Resources Department is committed to attracting,
+                                    developing, and retaining top talent that drives organizational success. We foster a
+                                    positive workplace culture, ensure compliance with employment policies, and provide
+                                    strategic support to enhance employee engagement, professional development, and
+                                    overall organizational excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-3">Our Vision</h5>
+                                <p class="card-text">To be a transformational HR partner that empowers employees to
+                                    achieve their full potential while supporting the Rayomar Group's strategic
+                                    objectives. We envision a workplace where talent is valued, diversity is celebrated,
+                                    and continuous learning drives innovation and organizational growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
-            <div class="text-start mt-3">
-                <a href="HRServicesLP.html" class="btn btn-success">See More</a>
-            </div>
-        </section>
-    </div>
 
-    <!-- Logout Confirmation Modal -->
-    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Services Section -->
+            <section id="services" class="mb-5">
+                <h2>Services</h2>
+                <p>Explore the services offered by the Human Resources Department.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee Support Services</h5>
+                                <p class="card-text">Comprehensive support for HR-related inquiries including
+                                    recruitment, benefits, training, and employee relations assistance.</p>
+                                <a id="employee-support-link" href="#" class="btn btn-success">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="modal-body">
-                    Are you sure you want to logout?
+
+                <div class="text-start mt-3">
+                    <a id="servicesLP-link" href="#" class="btn btn-success">See More</a>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" onclick="confirmLogout()">Confirm</button>
+            </section>
+
+            <!-- Accessing Files Section -->
+            <section id="accessing-files" class="mb-5">
+                <h2>Files</h2>
+                <p>Here you can access various files related to the Human Resources Department.</p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">HR Forms & Templates</h5>
+                                <p class="card-text">Access HR-related forms and templates for various employee needs
+                                </p>
+                                <a id="sharepoint-templates" href="#" class="btn btn-primary">View Forms & Templates</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee Handbooks</h5>
+                                <p class="card-text">Access employee handbooks and orientation materials</p>
+                                <a id="sharepoint-handbooks" href="#" class="btn btn-primary">View Handbooks</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Tools & Resources</h5>
+                                <p class="card-text">Access HR tools, resources, and development materials</p>
+                                <a id="sharepoint-tools" href="#" class="btn btn-primary">View Tools & Resources</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="text-start mt-3">
+                    <a id="filesLP-link" href="#" class="btn btn-primary">See More</a>
+                </div>
+            </section>
+
+
+
+            <!-- Policies and Guidelines Section -->
+            <section id="policies-guidelines" class="mb-5">
+                <h2>Policies and Guidelines</h2>
+                <p>Review the policies and guidelines for the Human Resources Department.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5>Code of Conduct</h5>
+                        <p>Policy guidelines for employee conduct and professional behavior</p>
+                        <a id="code-conduct-guidelines" href="#" class="btn btn-secondary">Read More</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Leave Policy</h5>
+                        <p>Guidelines for leave entitlements and leave management procedures</p>
+                        <a id="leave-policy-guidelines" href="#" class="btn btn-secondary">Read More</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Performance Management</h5>
+                        <p>Policy on performance evaluation and employee development</p>
+                        <a id="performance-guidelines" href="#" class="btn btn-secondary">Read More</a>
+                    </li>
+                </ul>
+                <div class="text-start mt-3">
+                    <a id="policiesLP-link" href="#" class="btn btn-secondary">See More</a>
+                </div>
+            </section>
+
+
+            <section id="about-us-link" class="mb-5">
+                <h2 class="text-center mb-5" id="aboutus-link">About Our Team</h2>
+
+                <!-- Group Photo Section -->
+                <div class="group-photo-container">
+                    <h3 class="mb-3">Our HR Team</h3>
+                    <img src="group-photo.jpg" alt="HR Team Group Photo">
+                </div>
+
+                <!-- Team Members Section (Cards) -->
+                <section id="team-members" class="mb-5">
+                    <h2 class="text-center mb-4">Meet Our Team</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card team-member-card">
+                                <div class="member-photo">
+                                    <img src="member1.jpg" alt="Member 1"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-info">
+                                    <div class="member-name">HR Manager Name</div>
+                                    <div class="member-detail"><strong>Position:</strong> Human Resources Manager
+                                    </div>
+
+                                    <div class="member-email"><strong>Email:</strong> hr.manager@rayomar.com.ph</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card team-member-card">
+                                <div class="member-photo">
+                                    <img src="member2.jpg" alt="Member 2"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-info">
+                                    <div class="member-name">HR Specialist Name</div>
+                                    <div class="member-detail"><strong>Position:</strong> HR Specialist
+                                    </div>
+
+                                    <div class="member-email"><strong>Email:</strong> hr.specialist@rayomar.com.ph
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card team-member-card">
+                                <div class="member-photo">
+                                    <img src="member3.jpg" alt="Member 3"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-info">
+                                    <div class="member-name">Recruitment Officer Name</div>
+                                    <div class="member-detail"><strong>Position:</strong> Recruitment Officer</div>
+
+                                    <div class="member-email"><strong>Email:</strong> recruitment@rayomar.com.ph</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card team-member-card">
+                                <div class="member-photo">
+                                    <img src="member4.jpg" alt="Member 4"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-info">
+                                    <div class="member-name">Training & Development Officer</div>
+                                    <div class="member-detail"><strong>Position:</strong> Training & Development Officer
+                                    </div>
+
+                                    <div class="member-email"><strong>Email:</strong> training@rayomar.com.ph
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card team-member-card">
+                                <div class="member-photo">
+                                    <img src="member5.jpg" alt="Member 5"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-info">
+                                    <div class="member-name">Payroll Officer Name</div>
+                                    <div class="member-detail"><strong>Position:</strong> Payroll Officer
+                                    </div>
+
+                                    <div class="member-email"><strong>Email:</strong> payroll@rayomar.com.ph</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card team-member-card">
+                                <div class="member-photo">
+                                    <img src="member6.jpg" alt="Member 6"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-info">
+                                    <div class="member-name">Employee Relations Officer</div>
+                                    <div class="member-detail"><strong>Position:</strong> Employee Relations Officer
+                                    </div>
+
+
+                                    <div class="member-email"><strong>Email:</strong> employee.relations@rayomar.com.ph
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Recruitment Section -->
+                    <section id="recruitment" class="mb-5">
+                        <div class="section-header">
+                            <h3>Recruitment & Talent Acquisition</h3>
+                        </div>
+                        <p>The Recruitment & Talent Acquisition section is responsible for sourcing, screening, and
+                            hiring qualified candidates to meet the organization's staffing needs. This team conducts
+                            job analyses, develops recruitment strategies, and manages the entire hiring process from
+                            job posting through onboarding. They work closely with department heads to understand talent
+                            requirements and maintain a pipeline of high-quality candidates that align with the
+                            company's values and career development opportunities.
+                            <br><br>
+                            Beyond traditional recruitment, this section also focuses on employer branding and building
+                            relationships with educational institutions and professional networks. They work to create a
+                            positive candidate experience and ensure that selected employees are well-integrated into
+                            the organization through comprehensive onboarding programs.
+                        </p>
+                    </section>
+
+                    <!-- Employee Development Section -->
+                    <section id="employee-development" class="mb-5">
+                        <div class="section-header">
+                            <h3>Training & Employee Development</h3>
+                        </div>
+                        <p>
+                            The Training & Employee Development section ensures employees have the skills and knowledge
+                            necessary to excel in their roles and advance their careers. This includes identifying
+                            training needs, designing and delivering training programs, and measuring the effectiveness
+                            of learning initiatives. The section manages both technical skills training and soft skills
+                            development, including leadership training, communication workshops, and professional
+                            certifications.
+                            <br><br>
+                            This section also coordinates mentorship programs, career pathing initiatives, and
+                            succession planning to ensure a pipeline of future leaders. By investing in employee
+                            development, the organization creates a culture of continuous learning and improvement that
+                            benefits both individual employees and the overall organization.
+                        </p>
+                    </section>
+
+                    <!-- Employee Relations Section -->
+                    <section id="employee-relations" class="mb-5">
+                        <div class="section-header">
+                            <h3>Employee Relations & Engagement</h3>
+                        </div>
+                        <p>
+                            The Employee Relations & Engagement section focuses on building and maintaining positive
+                            relationships between the organization and its employees. They handle employee grievances,
+                            disciplinary matters, and create programs that enhance employee engagement and satisfaction.
+                            This section serves as a bridge between management and employees, ensuring fair treatment
+                            and open communication channels.
+                            <br><br>
+                            The section also organizes employee wellness programs, recognition initiatives, and cultural
+                            events that foster a sense of community and belonging. By proactively addressing employee
+                            concerns and creating a positive workplace culture, this section contributes to higher
+                            retention rates, improved morale, and enhanced organizational productivity.
+                        </p>
+                    </section>
+
+                    <!-- Organizational Chart Section -->
+                    <section id="organizational-chart" class="mb-5">
+                        <h2 class="text-center mb-4">Organizational Chart</h2>
+                        <div class="org-chart-container">
+                            <img id="org-chart-img" alt="Organizational Chart">
+                        </div>
+                    </section>
+                </section>
+        </div>
+
+        <!-- Logout Confirmation Modal -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to logout?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="confirmLogout()">Confirm</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="../Landingpage/Landingpage.js"></script>
+        <script src="HRDLP.js"></script>
+        <script>
+
+
+            document.getElementById('navbar-home-link').href = backToHRMain;
+            document.getElementById('navbar-aboutus-link').href = "#aboutus-link";
+            document.getElementById('navbar-files-link').href = "#accessing-files";
+            document.getElementById('navbar-policies-link').href = "#policies-guidelines";
+            document.getElementById('navbar-services-link').href = "#services";
+            document.getElementById('org-chart-img').src = OrgChartFile;
+            document.getElementById('filesLP-link').href = SMFiles;
+            document.getElementById('sharepoint-templates').href = templatefile;
+            document.getElementById('sharepoint-handbooks').href = handbookfile;
+            document.getElementById('sharepoint-tools').href = SPfile;
+
+            document.getElementById('code-conduct-guidelines').href = PolicyCodeOfConduct;
+            document.getElementById('leave-policy-guidelines').href = PolicyLeave;
+            document.getElementById('performance-guidelines').href = PolicyPerformance;
+            document.getElementById('policiesLP-link').href = SMPolicies;
+            document.getElementById('employee-support-link').href = employeeSupportUrl;
+            document.getElementById('servicesLP-link').href = SMServices;
+            document.getElementById('wixBooking-link').href = wixBookingUrl;
+        </script>
+    </div>
 </body>
+
 </html>
