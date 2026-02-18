@@ -8,6 +8,37 @@ const chatgptfile ="ChatGPT.html"
 const fathomfile ="Fathom.html"
 
 //News Section
+const newsEvents = [
+  
+  {
+    id: 'news-link1',
+    image: 'lad2.png',
+    title: 'Lightning After Dark Event',
+    description: 'Lightning After Dark event 2025. Stay tuned for more details.',
+    link: '#'
+  },
+  {
+    id: 'news-link2',
+    image: 'sc2.png',
+    title: 'Steering Committee Meeting',
+    description: 'Steering Committee 2025, strategic planning session to shape the future of our department..',
+    link: '#'
+  },
+  {
+    id: 'news-link3',
+    image: 'lad3.png',
+    title: 'Executive Christmas Party',
+    description: 'Celebrate excellence at our Executive Christmas Party 2025.',
+    link: '#'
+  },
+  {
+    id: 'news-link4',
+    image: 'sc3.png',
+    title: 'Management Excellence Award Event',
+    description: 'Awarding of Management, know how companies performed and the winner of Management Excellence Award 2025.',
+    link: '#'
+  }
+];
 
 //About Us Section
 const aboutUsFile = "BDDAboutUs.html";
@@ -24,29 +55,30 @@ const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
 
 //HREF navigation within MSTeams.html
 const teamsSignIn = "https://teams.microsoft.com";
-const teamsManual = "https://gofile.me/70I49/zeGUqctZt"
+const teamsManual = "https://gofile.me/70I49/gRs4KfVLo";
 
 // HREF navigation within Fathom.html
 const fathomSignIn = "https://fathom.ai";
-const fathomManual = "https://gofile.me/70I49/0Fm0nOKYO"; 
+const fathomManual = "https://gofile.me/70I49/uZOFCsTWq";
 
 // HREF navigation within ChatGPT.html
 const chatgptSignIn = "https://chat.openai.com";
-const chatgptManual = "https://gofile.me/70I49/Mb5gaGMBg";
+const chatgptManual = "https://gofile.me/70I49/JDm5jjM2Q";
 
 
 //HREF navigation within the FilesLP.html
 const Homepage = "../Landingpage/LandingPage.html";
-const SPfile = "https://gofile.me/70I49/fjG0pC7ur";
-const logosfile = "https://gofile.me/70I49/x5WEWfOG2";
-const templatefile ="https://gofile.me/70I49/a0PjjQTaZ"
+const SPfile = "https://gofile.me/70I49/56utEJILw";
+const logosfile = "https://gofile.me/70I49/GC9DWx5mX";
+const templatefile ="https://gofile.me/70I49/8JgqRVocA"
 
 //Variable names for HREFs in PoliciesLP.html
-const PolicyLAD = "https://gofile.me/70I49/cljvKWYSl";
-const PolicySC = "https://gofile.me/70I49/64U1jyFlA";
+const PolicyLAD = "https://gofile.me/70I49/pnFewZNuG";
+const PolicySC = "https://gofile.me/70I49/moYgdmwB1";
 const PolicyMEA = "#"; // Placeholder link for Management Excellence Award
-const PolicyPRF = "https://gofile.me/70I49/tZrINxMQb";
-const PolicyPTL = "https://gofile.me/70I49/7pHEHiw6H"; 
+const PolicyPRF = "https://gofile.me/70I49/sa4GhCBkr";
+const PolicyPTL = "https://gofile.me/70I49/flfcAUfVJ"; 
+const PolicyRBW = "https://gofile.me/70I49/qsIChQfZK";
 
 // Variable names for HREFs in ServicesLP.html
 const projectRequestUrl = "https://forms.office.com/r/AHPQAeL3Nj";
@@ -95,6 +127,50 @@ searchButton.addEventListener('click', function(e) {
   });
 });
 
+// News Events Modal Handler
+document.addEventListener('DOMContentLoaded', function() {
+  newsEvents.forEach(event => {
+    const newsLink = document.getElementById(event.id);
+    if (newsLink) {
+      newsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Set modal content
+        document.getElementById('newsEventModalLabel').textContent = event.title;
+        document.getElementById('eventImage').src = event.image;
+        document.getElementById('eventDescription').textContent = event.description;
+        document.getElementById('eventSeeMoreBtn').href = event.link;
+        
+        // Show modal
+        const modal = new bootstrap.Modal(document.getElementById('newsEventModal'));
+        modal.show();
+      });
+    }
+  });
+});
+
 function confirmLogout() {
   window.location.href = '../login.html';
 }
+
+// Scroll to Top Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) { // Show after scrolling 300px
+      scrollToTopBtn.style.display = 'flex';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+
+  // Scroll to top on click
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
