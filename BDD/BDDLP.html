@@ -202,7 +202,7 @@
             <!-- Department Navigation Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
                 <div class="container-fluid">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a id="navbar-home-link" class="nav-link" href="">Home</a>
                         </li>
@@ -223,28 +223,49 @@
                 </div>
             </nav>
 
-            <!-- News & Events Carousel Section -->
+            <!-- News & Events Slideshow Section -->
             <h2 class="text-center mb-5">Latest News & Events</h2>
             <h3 class="text-center mb-5">"Stay informed with our latest updates and announcements"</h3>
 
-            <div class="Carousel">
-                <div class="group">
-                    <a class="card" id="news-link1">
-                        <img src="lad1.png" alt="News Event 1">
-                    </a>
-                    <a class="card" id="news-link2">
-                        <img src="sc1.png" alt="News Event 2">
-                    </a>
+            <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-wrap="true" data-bs-pause="hover">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <a class="card news-card animate-card" id="news-link1" href="#" data-bs-toggle="modal" data-bs-target="#newsEventModal">
+                                <img src="lad1.png" alt="News Event 1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <a class="card news-card animate-card" id="news-link2" href="#" data-bs-toggle="modal" data-bs-target="#newsEventModal">
+                                <img src="sc1.png" alt="News Event 2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <a class="card news-card animate-card" id="news-link3" href="#" data-bs-toggle="modal" data-bs-target="#newsEventModal">
+                                <img src="lad2.png" alt="News Event 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <a class="card news-card animate-card" id="news-link4" href="#" data-bs-toggle="modal" data-bs-target="#newsEventModal">
+                                <img src="sc2.png" alt="News Event 4">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="group">
-                    <a class="card" id="news-link3">
-                        <img src="lad2.png" alt="News Event 3">
-                    </a>
-                    <a class="card" id="news-link4">
-                        <img src="sc2.png" alt="News Event 4">
-                    </a>
-                </div>
-                
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
             <h1 class="text-center mb-5"><img src="RMI-BDDLOGO.png" alt="Business Development Department"
@@ -286,25 +307,25 @@
             <div class="Carousel">
                 <div class="group">
                     <a class="card" id="chatgpt-link1">
-                        <img src="gpt1.png" alt="ChatGPT">
+                        <img src="app_photos/gpt1.png" alt="ChatGPT">
                     </a>
                     <a class="card" id="teams-link1">
-                        <img src="teams3.png" alt="Microsoft Teams">
+                        <img src="app_photos/teams3.png" alt="Microsoft Teams">
                     </a>
                     <a class="card" id="fathom-link1">
-                        <img src="fathom2.jpg" alt="Fathom">
+                        <img src="app_photos/fathom2.jpg" alt="Fathom">
 
                     </a>
                 </div>
                 <div class="group">
                     <a class="card" id="chatgpt-link2">
-                        <img src="gpt1.png" alt="ChatGPT">
+                        <img src="app_photos/gpt1.png" alt="ChatGPT">
                     </a>
                     <a class="card" id="teams-link2">
-                        <img src="teams3.png" alt="Microsoft Teams">
+                        <img src="app_photos/teams3.png" alt="Microsoft Teams">
                     </a>
                     <a class="card" id="fathom-link2">
-                        <img src="fathom2.jpg" alt="Fathom">
+                        <img src="app_photos/fathom2.jpg" alt="Fathom">
                     </a>
                 </div>
 
@@ -485,7 +506,7 @@
                 <!-- Group Photo Section -->
                 <div class="group-photo-container">
                     <h3 class="mb-3">Our Team</h3>
-                    <img src="group-photo.jpg" alt="Team Group Photo">
+                    <img src="../employee_photos/group-photo.jpg" alt="Team Group Photo">
                 </div>
 
                 <!-- Team Members Section (Cards) -->
@@ -495,7 +516,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="card team-member-card">
                                 <div class="member-photo">
-                                    <img src="CCG.jpg" alt="Member 1"
+                                    <img src="employee_photos/CCG.jpg" alt="Member 1"
                                         style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
                                 <div class="member-info">
@@ -511,7 +532,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="card team-member-card">
                                 <div class="member-photo">
-                                    <img src="Deeg.jpg" alt="Member 2"
+                                    <img src="employee_photos/Deeg.jpg" alt="Member 2"
                                         style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
                                 <div class="member-info">
@@ -561,7 +582,7 @@
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="card team-member-card">
                                 <div class="member-photo">
-                                    <img src="Lyka.jpg" alt="Member 5"
+                                    <img src="employee_photos/Lyka.jpg" alt="Member 5"
                                         style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
                                 <div class="member-info">
@@ -686,14 +707,14 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="newsEventModalLabel">Event Details</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" onclick="returnToBDDLP()" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
                         <img id="eventImage" src="" alt="Event" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
                         <p id="eventDescription"></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" onclick="returnToBDDLP()">Close</button>
                         <button type="button" class="btn btn-primary" id="eventSeeMoreBtn">See More</button>
                     </div>
                 </div>
@@ -751,6 +772,7 @@
             document.getElementById('teams-link2').href = teamsfile;
             document.getElementById('fathom-link1').href = fathomfile;
             document.getElementById('fathom-link2').href = fathomfile;
+           
         </script>
 
 

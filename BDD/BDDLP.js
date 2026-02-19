@@ -48,7 +48,7 @@ const Member3 = "#"; // Placeholder link for Member 3
 const Member4 = "#"; // Placeholder link for Member 4
 const Member5 = "#"; // Placeholder link for Member 5
 const Member6 = "#"; // Placeholder link for Member 6
-const OrgChartFile = "../BDD/Org_chart.png";
+const OrgChartFile = "../BDD/org_chart & BDDlogo/Org_chart.png";
 
 // HREF navigation within WixBooking.html
 const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
@@ -153,6 +153,11 @@ function confirmLogout() {
   window.location.href = '../login.html';
 }
 
+function returnToBDDLP() {
+  // Reload the current page to return to main BDDLP state
+  window.location.reload();
+}
+
 // Scroll to Top Button Functionality
 document.addEventListener('DOMContentLoaded', function() {
   const scrollToTopBtn = document.getElementById('scrollToTopBtn');
@@ -173,4 +178,34 @@ document.addEventListener('DOMContentLoaded', function() {
       behavior: 'smooth'
     });
   });
+
+  // News Carousel Animation Control
+  const newsCarousel = document.getElementById('newsCarousel');
+  if (newsCarousel) {
+    const carousel = new bootstrap.Carousel(newsCarousel, {
+      interval: 4000, // 4 seconds
+      pause: 'hover' // Pause on hover
+    });
+
+  // News Carousel Animation Control
+  const newsCarousel = document.getElementById('newsCarousel');
+  if (newsCarousel) {
+    const carousel = new bootstrap.Carousel(newsCarousel, {
+      interval: 4000, // 4 seconds
+      pause: 'hover', // Pause on hover
+      wrap: true, // Continuous loop
+      touch: true // Enable touch/swipe
+    });
+
+    
+    // Add keyboard navigation for better accessibility
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') {
+        carousel.prev();
+      } else if (e.key === 'ArrowRight') {
+        carousel.next();
+      }
+    });
+  }
+  }
 });

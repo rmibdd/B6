@@ -46,6 +46,129 @@
     object-fit: contain;
     flex: 0 0 50%;
 }
+
+/* News Slideshow Styles */
+#newsCarousel {
+    max-width: 90vw; /* Use 90% of viewport width for maximum panning effect */
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.news-card {
+    width: 100%; /* Full width of carousel container */
+    max-width: 600px; /* Maximum card width */
+    height: 200px; /* Increased height for more visual impact */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease; /* Smoother transitions */
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,249,250,0.9));
+    border-radius: 15px;
+}
+
+.news-card:hover {
+    transform: scale(1.08) rotate(1deg); /* More dramatic hover effect */
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.3);
+}
+
+.news-card img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover img {
+    transform: scale(1.05);
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px) scale(0.8) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1) rotate(0deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+    }
+}
+
+@keyframes panEffect {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%; /* Increased width for better visibility */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 123, 255, 0.9);
+    border-radius: 50%;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 123, 255, 1);
+    transform: scale(1.2);
+}
+
+/* Enhanced carousel transitions for maximum panning effect */
+.carousel-item {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    transform: translateX(0);
+}
+
+.carousel-item-next.carousel-item-start,
+.carousel-item-prev.carousel-item-end {
+    transform: translateX(100%);
+}
+
+.carousel-item-prev.carousel-item-start,
+.carousel-item-next.carousel-item-end {
+    transform: translateX(-100%);
+}
  @keyframes spin {
     from {translate: 0 0;}
     to {translate: -100% 0;}
