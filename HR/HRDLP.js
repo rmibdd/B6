@@ -3,9 +3,7 @@ const backToHRMain = "HRDLP.html";
 const SMFiles = "HRFilesLP.html";
 const SMPolicies = "HRPoliciesLP.html";
 const SMServices = "HRServicesLP.html";
-const teamsfile ="MS Teams.html";
-const chatgptfile ="ChatGPT.html";
-const fathomfile ="Fathom.html";
+
 
 //About Us Section
 const aboutUsFile = "HRAboutUs.html";
@@ -17,34 +15,19 @@ const Member5 = "#"; // Placeholder link for Member 5
 const Member6 = "#"; // Placeholder link for Member 6
 const OrgChartFile = "aboutus/HR_org_chart.jpg";
 
-// HREF navigation within WixBooking.html
-const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
-
-//HREF navigation within MSTeams.html
-const teamsSignIn = "https://teams.microsoft.com";
-const teamsManual = "https://gofile.me/70I49/zeGUqctZt"
-
-// HREF navigation within Fathom.html
-const fathomSignIn = "https://fathom.ai";
-const fathomManual = "https://gofile.me/70I49/0Fm0nOKYO"; 
-
-// HREF navigation within ChatGPT.html
-const chatgptSignIn = "https://chat.openai.com";
-const chatgptManual = "https://gofile.me/70I49/Mb5gaGMBg";
-
 
 //HREF navigation within the HRFilesLP.html
 const Homepage = "../Landingpage/LandingPage.html";
-const SPfile = "https://gofile.me/70I49/fjG0pC7ur";
-const handbookfile = "https://gofile.me/70I49/x5WEWfOG2";
+const SPfile = "#"; // Placeholder link for Performance Management Policy
+const handbookfile = "#"; // Placeholder link for Performance Management Policy
 const templatefile ="https://gofile.me/70I49/xemNwH8Bt"
 
 //Variable names for HREFs in HRPoliciesLP.html
-const PolicyCodeOfConduct = "https://gofile.me/70I49/cljvKWYSl";
-const PolicyLeave = "https://gofile.me/70I49/64U1jyFlA";
+const PolicyCodeOfConduct = "#"; // Placeholder link for Performance Management Policy
+const PolicyLeave = "#"; // Placeholder link for Performance Management Policy
 const PolicyPerformance = "#"; // Placeholder link for Performance Management Policy
-const PolicyCompliance = "https://gofile.me/70I49/tZrINxMQb";
-const PolicyWellness = "https://gofile.me/70I49/7pHEHiw6H"; 
+const PolicyCompliance = "#"; // Placeholder link for Performance Management Policy
+const PolicyWellness = "#"; // Placeholder link for Performance Management Policy
 
 // Variable names for HREFs in HRServicesLP.html
 const ServiceRequestFormone = "https://docs.google.com/forms/d/e/1FAIpQLSeEwOcw5IS24PM-KUUiclcT-_rdYsSedd583BgkFGCE9fsrdw/viewform";
@@ -73,23 +56,23 @@ const newsEvents = [
   },
   {
     id: 'news-link2',
-    image: 'sc1.png',
-    title: 'Steering Committee Meeting',
-    description: 'Steering Committee 2025, strategic planning session to shape the future of our department.',
+    image: '#',
+    title: '#',
+    description: '#',
     link: '#'
   },
   {
     id: 'news-link3',
-    image: 'lad2.png',
-    title: 'Executive Christmas Party',
-    description: 'Celebrate excellence at our Executive Christmas Party 2025.',
+    image: '#',
+    title: '#',
+    description: '#',
     link: '#'
   },
   {
     id: 'news-link4',
-    image: 'sc2.png',
-    title: 'Management Excellence Award Event',
-    description: 'Awarding of Management Excellence Award 2025.',
+    image: '#',
+    title: '#',
+    description: '#',
     link: '#'
   }
 ];
