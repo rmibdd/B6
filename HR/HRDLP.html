@@ -32,8 +32,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-item">
-                    <a id="wixBooking-link" href="https://rmi-bdd.wixsite.com/rayomargroup-booking"
-                        class="sidebar-nav-link">
+                    <a id="wixBooking-link" href="#" class="sidebar-nav-link">
                         <i class="lni lni-agenda"></i>
                         <span>Book Conference Room</span>
                     </a>
@@ -333,9 +332,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="row">
+
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
@@ -352,7 +349,11 @@
                             </div>
                         </div>
                     </div>
-                    <br>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
@@ -570,9 +571,12 @@
         </button>
 
         <!--CMS-->
-        <script src="HRDLP.js"></script>
-        <script>
+        <script src="HRDLP.js">
+        
             document.getElementById('navbar-home-link').href = backToHRMain;
+            document.getElementById('policiesLP-link').href = SMPolicies;
+            document.getElementById('servicesLP-link').href = SMServices;
+            document.getElementById('wixBooking-link').href = wixBookingUrl;
             document.getElementById('navbar-aboutus-link').href = "#recruitment";
             document.getElementById('navbar-files-link').href = "#accessing-files";
             document.getElementById('navbar-policies-link').href = "#policies-guidelines";
@@ -587,9 +591,6 @@
             document.getElementById('code-conduct-guidelines').href = "#"; // Placeholder link for Performance Management Policy
             document.getElementById('leave-policy-guidelines').href = "#"; // Placeholder link for Performance Management Policy
             document.getElementById('performance-guidelines').href ="#"; // Placeholder link for Performance Management Policy
-            document.getElementById('policiesLP-link').href = SMPolicies;
-            document.getElementById('servicesLP-link').href = SMServices;
-            document.getElementById('wixBooking-link').href = wixBookingUrl;
             document.getElementById('home-one').href = Homepage;
             document.getElementById('home-two').href = Homepage;
         </script>

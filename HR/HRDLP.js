@@ -3,7 +3,8 @@ const backToHRMain = "HRDLP.html";
 const SMFiles = "HRFilesLP.html";
 const SMPolicies = "HRPoliciesLP.html";
 const SMServices = "HRServicesLP.html";
-
+const wixBookingUrl = "https://rmi-bdd.wixsite.com/rayomargroup-booking";
+const Homepage = "../Landingpage/LandingPage.html";
 
 //About Us Section
 const aboutUsFile = "HRAboutUs.html";
@@ -17,8 +18,6 @@ const OrgChartFile = "aboutus/HR_org_chart.jpg";
 
 
 //HREF navigation within the HRFilesLP.html
-const Homepage = "../Landingpage/LandingPage.html";
-const SPfile = "#"; // Placeholder link for Performance Management Policy
 const handbookfile = "#"; // Placeholder link for Performance Management Policy
 const templatefile ="https://gofile.me/70I49/xemNwH8Bt"
 
